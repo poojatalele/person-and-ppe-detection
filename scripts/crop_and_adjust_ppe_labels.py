@@ -20,6 +20,9 @@ def crop_persons_and_adjust_ppe_labels(person_labels_dir, ppe_labels_dir, ppe_im
         image_path = os.path.join(ppe_images_dir, label_file.replace('.txt', '.jpg'))
 
         # Read the person label file
+        if not os.path.exists(ppe_label_path):
+            continue
+
         with open(person_label_path, 'r') as file:
             person_lines = file.readlines()
 
