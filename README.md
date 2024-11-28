@@ -1,5 +1,3 @@
-# Syook AI Intern Assignment - Pooja Talele
-
 ## Repository Structure
 
 ### 1. Scripts
